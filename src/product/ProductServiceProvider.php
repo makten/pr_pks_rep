@@ -20,22 +20,22 @@ class ProductServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__ . '/../product/views', 'products');
+        $this->loadViewsFrom(__DIR__ . '/../../product/views', 'products');
 
         $this->publishes([
-            __DIR__.'/../product/views' => base_path('resources/views/modules/products'),
+            __DIR__.'/../../product/views' => base_path('resources/views/modules/products'),
         ], 'products');
 
         $this->publishes([
-            __DIR__.'/../config/products.php' => config_path('products.php')
+            __DIR__.'/../../config/products.php' => config_path('products.php')
         ], 'config');
 
         $this->publishes([
-            __DIR__.'/../migrations/' => base_path('/database/migrations')
+            __DIR__.'/../../migrations/' => base_path('/database/migrations')
         ], 'migrations');
 
         $this->publishes([
-            __DIR__.'/../product/controllers' => base_path('/app/http/controllers')
+            __DIR__.'/../../product/controllers' => base_path('/app/http/controllers')
         ], 'productController');
 
     }
@@ -47,9 +47,8 @@ class ProductServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/products.php', 'products');
+        $this->mergeConfigFrom(__DIR__ . '/../../config/products.php', 'products');
 //        include __DIR__ .'/../routes.php';
 //        $this->app->make('Hafizabass\Modules\Product\ProductController');
-//        $this->app->bind('Hafizabass\Modules\Product\Contracts\')
     }
 }
