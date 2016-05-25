@@ -1,12 +1,26 @@
 {
     "name": "hafizabass/modules",
-    "description": "Modules for integrating into future laravel projects",
+    "type": "package",
+    "description": "Modular product for integrating into projects",
+    "keywords": ["product","products"],
+    "homepage": "",
+    "license": "MIT",
     "authors": [
         {
             "name": "Hafiz Abass",
-            "email": "hafizmakten@gmail.com"
+            "email": "hafizmakten@gmail",
+            "homepage": "",
+            "role": "Developer"
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Hafizabass\\Products": "src/"
+        }
+    }
 }
