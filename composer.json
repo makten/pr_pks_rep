@@ -1,0 +1,12 @@
+{
+    "name": "hafizabass/modules",
+    "description": "Modules for integrating into future laravel projects",
+    "authors": [
+        {
+            "name": "Hafiz Abass",
+            "email": "hafizmakten@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
