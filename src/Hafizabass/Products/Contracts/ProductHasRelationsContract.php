@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\Product\Contracts;
+namespace Hafizabass\Products\Contracts;
 
 /**
  * Created by PhpStorm.

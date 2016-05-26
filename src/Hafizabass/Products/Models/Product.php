@@ -6,7 +6,7 @@
  * Time: 16:36
  */
 
-namespace App\Modules\Product\Models;
+namespace Hafizabass\Products\Models;
 
 
 use Illuminate\Database\Eloquent\Model as Eloquent;

@@ -5,8 +5,7 @@
  * Date: 25-May-16
  * Time: 09:02
  */
-
-namespace App\Modules\Product\Contracts;
+namespace Hafizabass\Products\Contracts;
 
 
 interface PaymentHasRelationsContract

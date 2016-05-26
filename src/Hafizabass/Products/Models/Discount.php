@@ -6,18 +6,14 @@
  * Time: 09:17
  */
 
-namespace App\Modules\Product\Models;
+
+namespace Hafizabass\Products\Models;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 use App\Modules\Product\Contracts\CategoryHasRelationsContract;
 use App\Modules\Product\Traits\CategoryHasRelations;
 
-class Category extends Eloquent implements CategoryHasRelationsContract
+class  Discount Eloquent implements CategoryHasRelationsContract
 {
-    use CategoryHasRelations;
 
-    protected $fillable = [
-        'name',
-        'description'
-    ];
 }

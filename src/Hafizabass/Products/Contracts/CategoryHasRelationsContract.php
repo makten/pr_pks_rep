@@ -6,7 +6,8 @@
  * Time: 09:19
  */
 
-namespace App\Modules\Product\Contracts;
+
+namespace Hafizabass\Products\Contracts;
 
 
 interface CategoryHasRelationsContract

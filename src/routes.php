@@ -6,4 +6,4 @@
  * Time: 16:26
  */
 
-Route::get('product/{timezone}', 'hafizabass\modules\product\ProductController@index');
+Route::get('product/{timezone}', 'hafizabass\product\ProductController@index');

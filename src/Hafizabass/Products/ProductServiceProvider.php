@@ -6,7 +6,7 @@
  * Time: 15:23
  */
 
-namespace Hafizabass\Modules\Product;
+namespace Hafizabass\Products;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -29,10 +29,10 @@ class ProductServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__ . '/../../product/views', 'products');
+        // $this->loadViewsFrom(__DIR__ . '/../../product/views', 'products');
 
         $this->publishes([
-            __DIR__.'/../../product/views' => base_path('resources/views/modules/products'),
+            __DIR__.'/../../Products/Views' => base_path('resources/views/modules/products'),
         ], 'products');
 
         $this->publishes([

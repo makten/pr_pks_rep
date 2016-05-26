@@ -6,7 +6,7 @@
  * Time: 09:20
  */
 
-namespace Hafizabass\Modules;
+namespace Hafizabass\Products\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 

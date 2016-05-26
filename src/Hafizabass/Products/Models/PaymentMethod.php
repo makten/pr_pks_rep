@@ -6,7 +6,7 @@
  * Time: 08:59
  */
 
-namespace App\Modules\Product\Models;
+namespace Hafizabass\Products\Models;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 use App\Modules\Product\Traits\PaymentHasRelations;

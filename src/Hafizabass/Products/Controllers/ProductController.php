@@ -6,7 +6,7 @@
  * Time: 16:28
  */
 
-namespace Hafizabass\Modules\Product;
+namespace Hafizabass\Products\Controllers;
 
 use App\Http\Controllers\Controller;
 use Carbon\Carbon;
