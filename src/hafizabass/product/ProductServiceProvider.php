@@ -13,6 +13,15 @@ use Illuminate\Support\ServiceProvider;
 
 class ProductServiceProvider extends ServiceProvider
 {
+	
+	/**
+     * Indicates if loading of the provider is deferred.
+     *
+     * @var bool
+     */
+    protected $defer = false;
+	
+	
     /**
      * Bootstrap any application services.
      *
