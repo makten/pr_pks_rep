@@ -15,9 +15,11 @@ class CreateProductsTable extends Migration
         Schema::create('products', function(Blueprint $table){
             $table->increments('id');
             $table->string('name');
+            $table->integer('client_id');
             $table->string('slug')->unique();
             $table->string('description')->nullable();
-            $table->increments('id');
+            $table->foreign('client_id')->references('id')->on('business_owners')->onDelete('cascade');
+            $table->timestamps();
         });
     }
 
