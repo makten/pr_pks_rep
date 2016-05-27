@@ -3,17 +3,28 @@
  * Created by PhpStorm.
  * User: Hafiz
  * Date: 25-May-16
- * Time: 09:17
+ * Time: 08:59
  */
 
-
-namespace Hafizabass\Products\Models;
+namespace App;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
-use App\Modules\Product\Contracts\CategoryHasRelationsContract;
-use App\Modules\Product\Traits\CategoryHasRelations;
+use Hafizabass\Products\Traits\DiscountHasRelations;
+use Hafizabass\Products\Contracts\DiscountHasRelationsContract;
 
-class  Discount Eloquent implements CategoryHasRelationsContract
+
+class Discount extends Eloquent implements PaymentHasRelationsContract
 {
+    use PaymentHasRelations;
+
+    protected $fillable = [
+        'name',
+        'slug',
+        'description',
+        'validFrom',
+        'validTo',
+        'extra',
+
+    ];
 
 }

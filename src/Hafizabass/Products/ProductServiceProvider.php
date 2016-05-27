@@ -44,8 +44,12 @@ class ProductServiceProvider extends ServiceProvider
         ], 'migrations');
 
         $this->publishes([
-            __DIR__.'/../../product/controllers' => base_path('/app/http/controllers')
+            __DIR__.'/../Products/controllers' => base_path('/app/http/controllers')
         ], 'productController');
+
+        $this->publishes([
+            __DIR__.'/../Products/Models' => base_path('/app')
+        ], 'models');
 
     }
 

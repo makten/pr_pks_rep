@@ -6,11 +6,11 @@
  * Time: 08:59
  */
 
-namespace Hafizabass\Products\Models;
+namespace App;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
-use App\Modules\Product\Traits\PaymentHasRelations;
-use App\Modules\Product\Contracts\PaymentHasRelationsContract;
+use Hafizabass\Products\Traits\PaymentHasRelations;
+use Hafizabass\Products\Contracts\PaymentHasRelationsContract;
 
 
 class PaymentMethod extends Eloquent implements PaymentHasRelationsContract
@@ -21,8 +21,6 @@ class PaymentMethod extends Eloquent implements PaymentHasRelationsContract
         'name',
         'slug',
         'description',
-        'price',
-        'stockStat'
 
     ];
 

@@ -6,12 +6,12 @@
  * Time: 16:36
  */
 
-namespace Hafizabass\Products\Models;
+namespace App;
 
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
-use App\Modules\Product\Traits\ProductHasRelations;
-use App\Modules\Product\Contracts\ProductHasRelationsContract;
+use HafizAbass\Products\Traits\ProductHasRelations;
+use HafizAbass\Products\Contracts\ProductHasRelationsContract;
 
 class Product extends Eloquent implements ProductHasRelationsContract
 {
